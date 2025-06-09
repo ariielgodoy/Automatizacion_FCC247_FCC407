@@ -43,8 +43,8 @@ Este proyecto es una interfaz gráfica (GUI) desarrollada en **Python con Tkinte
    ```bash
    pip install pyvisa pandas tabulate
 2. **Realización de la medición**:
-- `Introducir los parámetros pedidos en la interfaz`
-- `La ruta al excel pedida es la del archivo exportado desde EMC32 en formato .xls`
-- `La ruta del template debe ser la ruta dentro del analizador, debe incluir el .dfl`
-- `"Guardar screenshots en:" pregunta por la ruta en donde guardar las screenshots **EN EL ANALIZADOR**`
-- `La corrección del duty debe calcularla el usuario y aplicarle los debidos cálculos, sin embargo, se está trabajando para automatizar ese paso`
+- Introducir los parámetros pedidos en la interfaz
+- La ruta al excel pedida es la del archivo exportado desde EMC32 en formato .xls
+- La ruta del template debe ser la ruta dentro del analizador, debe incluir el .dfl
+- "Guardar screenshots en:" pregunta por la ruta en donde guardar las screenshots **EN EL ANALIZADOR**
+- La corrección del duty debe calcularla el usuario y aplicarle los debidos cálculos, sin embargo, se está trabajando para automatizar ese paso
