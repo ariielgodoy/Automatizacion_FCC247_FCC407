@@ -8,7 +8,8 @@ Este proyecto es una interfaz gráfica (GUI) desarrollada en **Python con Tkinte
 
 ## 📷 Captura de pantalla de ejemplo
 
-![demo](https://via.placeholder.com/800x400.png?text=Interfaz+EMC+Test+Automation)
+![image](https://github.com/user-attachments/assets/01df1300-e2eb-4a16-90a6-a28858b5829f)
+
 
 ---
 
