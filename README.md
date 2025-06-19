@@ -51,10 +51,8 @@ Finalmente, volvemos al emc32 y manualmente actualizamos la tabla de Final_Resul
 
 ---
 
-**Autor:** Juan Ariel Godoy Báez
+**Autor:** Juan Ariel Godoy Báez  **Puesto:** Becario
 
-**Puesto:** Becario
-
-**Director del proyecto:** Álvaro Borrego Robles
+**Director del proyecto:** Álvaro Borrego Robles  **Puesto:** Técnico de ensayos
 
 **Departamento:** Electromagnetic and Radio Matters (Connected Car)
