@@ -3,7 +3,8 @@
 
 A continuación se muestra la interfaz principal del programa:
 
-![image](https://github.com/user-attachments/assets/53724f82-0d43-4597-b04a-ae90ed8fd890)
+![image](https://github.com/user-attachments/assets/83358e3f-9c1b-453f-b397-50428729e396)
+
 
 
   
