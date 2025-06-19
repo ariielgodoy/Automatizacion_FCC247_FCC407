@@ -56,3 +56,5 @@ Finalmente, volvemos al emc32 y manualmente actualizamos la tabla de Final_Resul
 **Puesto:** Becario
 
 **Director del proyecto:** Álvaro Borrego Robles
+
+**Departamento:** Electromagnetic and Radio Matters (Connected Car)
