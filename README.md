@@ -44,7 +44,8 @@ Una vez rellenados los campos, pulsar el botón "Iniciar proceso".  Resultado: u
 ### 2º Actualizar el emc32
 Finalmente, volvemos al emc32 y manualmente actualizamos la tabla de Final_Result, con los valores nuevos, para que se corrija la posición de los puntos. En la tabla que devuelve el programa el margen ya está corregido, así como la media de AVG con el duty cycle.
 
-![image](https://github.com/user-attachments/assets/3f1d730f-bbf0-4c9f-bee9-1d0920bc8a86)
+![image]([https://github.com/user-attachments/assets/3f1d730f-bbf0-4c9f-bee9-1d0920bc8a86](https://github.com/user-attachments/assets/b0fc1a42-77ed-4ddf-9f23-14804f4f0cd6))
+
 
 *Figura B3. Tabla de resumen de medidas*
 
