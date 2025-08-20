@@ -30,7 +30,7 @@ Se maximizan todos los puntos necesarios según indique la norma para encontrar 
 ### 2º Exportar Frecuencias
 Salir del modo de medida, y exportar la tabla de Critical_Freqs haciendo clic en el botón que se ve en la imagen:
 
-![image]([https://github.com/user-attachments/assets/977fae63-518d-41bf-8d35-c10d97d29917](https://github.com/user-attachments/assets/e9fbd9a3-bc80-42b9-80b7-7a7b17678fa9))
+![image](https://github.com/user-attachments/assets/0792fb27-1b7b-4d15-b435-a1185092018b)
 
 
 *Figura B2. Tabla EMC32 y botón de exportar*
@@ -44,7 +44,7 @@ Una vez rellenados los campos, pulsar el botón "Iniciar proceso".  Resultado: u
 ### 2º Actualizar el emc32
 Finalmente, volvemos al emc32 y manualmente actualizamos la tabla de Final_Result, con los valores nuevos, para que se corrija la posición de los puntos. En la tabla que devuelve el programa el margen ya está corregido, así como la media de AVG con el duty cycle.
 
-![image]([https://github.com/user-attachments/assets/3f1d730f-bbf0-4c9f-bee9-1d0920bc8a86](https://github.com/user-attachments/assets/b0fc1a42-77ed-4ddf-9f23-14804f4f0cd6))
+![image](https://github.com/user-attachments/assets/3f1d730f-bbf0-4c9f-bee9-1d0920bc8a86)
 
 
 *Figura B3. Tabla de resumen de medidas*
