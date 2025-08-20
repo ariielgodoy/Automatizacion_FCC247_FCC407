@@ -3,7 +3,7 @@
 
 A continuación se muestra la interfaz principal del programa:
 
-![image](https://github.com/user-attachments/assets/83358e3f-9c1b-453f-b397-50428729e396)
+![image](https://github.com/user-attachments/assets/154df958-373c-49cc-8508-58830892d285)
 
 
 
@@ -20,7 +20,7 @@ A continuación se muestra la interfaz principal del programa:
 | 2  | **IP analizador e IP controlador**  | Se introduce la IP del analizador y del controlador de la mesa giratoria y mástil|
 | 3  | **Ruta del template**          | Se escribe la ruta al template dentro del analizador incluyendo el .dfl                |
 | 4  | **Archivo excel**      | Ruta al archivo excel que ha sido exportado desde EMC32             |
-| 5  | **Corrección del duty**    | se introduce la correccion del duty según la expresión: corrección = 10*log(1/duty)                          |
+| 5  | **Duty**    | Se introduce el valor medido del duty y dentro del programa se obtiene la corrección según: corrección = 10*log(1/duty)                          |
 | 6  | **Guardar screenshots en:**    | Especificar la ruta de la carpeta en donde guardar las capturas de pantallas **DENTRO** del analizador                          |
 
 ---
