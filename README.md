@@ -30,7 +30,8 @@ Se maximizan todos los puntos necesarios según indique la norma para encontrar 
 ### 2º Exportar Frecuencias
 Salir del modo de medida, y exportar la tabla de Critical_Freqs haciendo clic en el botón que se ve en la imagen:
 
-![image](https://github.com/user-attachments/assets/977fae63-518d-41bf-8d35-c10d97d29917)
+![image]([https://github.com/user-attachments/assets/977fae63-518d-41bf-8d35-c10d97d29917](https://github.com/user-attachments/assets/e9fbd9a3-bc80-42b9-80b7-7a7b17678fa9))
+
 
 *Figura B2. Tabla EMC32 y botón de exportar*
 
