@@ -42,7 +42,7 @@ Salir del modo de medida, y exportar la tabla de Critical_Freqs haciendo clic en
 Una vez rellenados los campos, pulsar el botón "Iniciar proceso".  Resultado: una por una, el programa busca todas las frecuencias y hace la maximización, tomando el control del analizador y el controlador de la mesa y mástil. Las capturas quedan guardadas donde hemos indicado, y además, el programa devuelve una tabla con la información medida
 
 ### 2º Actualizar el emc32
-Finalmente, volvemos al emc32 y manualmente actualizamos la tabla de Final_Result, con los valores nuevos, para que se corrija la posición de los puntos. En la tabla que devuelve el programa el margen ya está corregido, así como la media de AVG con el duty cycle.
+Finalmente, volvemos al emc32 y manualmente actualizamos la tabla de Final_Result, con los valores nuevos, para que se corrija la posición de los puntos. En la tabla que devuelve el programa, el margen ya está corregido, así como la media de AVG con el duty cycle.
 
 ![image](https://github.com/user-attachments/assets/3f1d730f-bbf0-4c9f-bee9-1d0920bc8a86)
 
