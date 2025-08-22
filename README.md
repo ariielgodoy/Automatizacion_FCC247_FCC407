@@ -17,10 +17,10 @@ A continuación se muestra la interfaz principal del programa:
 | Nº | Elemento en la interfaz             | Descripción                                                                 |
 |----|-------------------------------------|-----------------------------------------------------------------------------|
 | 1  | **Generación de nombre de archivo** | Los campos oferta, cliente, norma, modulación, canal y active port son usados para nombrar las capturas                         |
-| 2  | **IP analizador e IP controlador**  | Se introduce la IP del analizador y del controlador de la mesa giratoria y mástil|
+| 2  | **IP analizador e IP controlador**  | Se introduce la IP del analizador y del controlador de la mesa giratoria y mástil. Si se escoge el FRANKONIA hay que recordar colocar en la web la configuración del tilt. Si solo se está usando un controlador FRANKONIA para la mesa y para el mástil, hay que introducir la misma IP en los 2 campos. En el caso del FRANKONIA, hay que colocarlos en virtual dentro del EMC32 a la hora de usar el programa debido a que genera un conflicto de conexión.|
 | 3  | **Ruta del template**          | Se escribe la ruta al template dentro del analizador incluyendo el .dfl                |
 | 4  | **Archivo excel**      | Ruta al archivo excel que ha sido exportado desde EMC32             |
-| 5  | **Duty**    | Se introduce el valor medido del duty y dentro del programa se obtiene la corrección según: corrección = 10*log(1/duty)                          |
+| 5  | **Duty**    | Se introduce el valor medido del duty cycle y dentro del programa se obtiene la corrección según: corrección = 10*log(1/duty)                          |
 | 6  | **Guardar screenshots en:**    | Especificar la ruta de la carpeta en donde guardar las capturas de pantallas **DENTRO** del analizador                          |
 
 ---
@@ -39,7 +39,8 @@ Salir del modo de medida, y exportar la tabla de Critical_Freqs haciendo clic en
 
 ## Proceso de actuación del programa
 ### 1º Iniciar proceso
-Una vez rellenados los campos, pulsar el botón "Iniciar proceso".  Resultado: una por una, el programa busca todas las frecuencias y hace la maximización, tomando el control del analizador y el controlador de la mesa y mástil. Las capturas quedan guardadas donde hemos indicado, y además, el programa devuelve una tabla con la información medida
+Una vez rellenados los campos, pulsar el botón "Iniciar proceso".  
+Resultado: una por una, el programa busca todas las frecuencias y hace la maximización, tomando el control del analizador y el controlador(es) de la mesa y mástil. Las capturas quedan guardadas donde hemos indicado, y además, el programa devuelve una tabla con la información medida
 
 ### 2º Actualizar el emc32
 Finalmente, volvemos al emc32 y manualmente actualizamos la tabla de Final_Result, con los valores nuevos, para que se corrija la posición de los puntos. En la tabla que devuelve el programa, el margen ya está corregido, así como la media de AVG con el duty cycle.
