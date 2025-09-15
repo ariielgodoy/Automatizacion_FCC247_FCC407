@@ -1,62 +1,95 @@
-# Automatización FFC 15.247 y FCC 15.407
-## Interfaz de Usuario
+# ⚙️ Automatización FCC 15.247 & FCC 15.407
 
-A continuación se muestra la interfaz principal del programa:
-
-![image](https://github.com/user-attachments/assets/154df958-373c-49cc-8508-58830892d285)
-
-
-
-  
-*Figura B1. Interfaz principal del programa.*
-
----
-
-## Descripción de los elementos de la interfaz
-
-| Nº | Elemento en la interfaz             | Descripción                                                                 |
-|----|-------------------------------------|-----------------------------------------------------------------------------|
-| 1  | **Generación de nombre de archivo** | Los campos oferta, cliente, norma, modulación, canal y active port son usados para nombrar las capturas                         |
-| 2  | **IP analizador e IP controlador**  | Se introduce la IP del analizador y del controlador de la mesa giratoria y mástil. Si se escoge el FRANKONIA hay que recordar colocar en la web la configuración del tilt. Si solo se está usando un controlador FRANKONIA para la mesa y para el mástil, hay que introducir la misma IP en los 2 campos. En el caso del FRANKONIA, hay que colocarlos en virtual dentro del EMC32 a la hora de usar el programa debido a que genera un conflicto de conexión.|
-| 3  | **Ruta del template**          | Se escribe la ruta al template dentro del analizador incluyendo el .dfl                |
-| 4  | **Archivo excel**      | Ruta al archivo excel que ha sido exportado desde EMC32             |
-| 5  | **Duty**    | Se introduce el valor medido del duty cycle y dentro del programa se obtiene la corrección según: corrección = 10*log(1/duty)                          |
-| 6  | **Guardar screenshots en:**    | Especificar la ruta de la carpeta en donde guardar las capturas de pantallas **DENTRO** del analizador                          |
-
----
-## Obtención del excel de EMC32
-### 1º Maximización en EMC32.
-Se maximizan todos los puntos necesarios según indique la norma para encontrar la posición y altura peor. 
-### 2º Exportar Frecuencias
-Salir del modo de medida, y exportar la tabla de Critical_Freqs haciendo clic en el botón que se ve en la imagen:
-
-![image](https://github.com/user-attachments/assets/0792fb27-1b7b-4d15-b435-a1185092018b)
-
-
-*Figura B2. Tabla EMC32 y botón de exportar*
-
----
-
-## Proceso de actuación del programa
-### 1º Iniciar proceso
-Una vez rellenados los campos, pulsar el botón "Iniciar proceso".  
-Resultado: una por una, el programa busca todas las frecuencias y hace la maximización, tomando el control del analizador y el controlador(es) de la mesa y mástil. Las capturas quedan guardadas donde hemos indicado, y además, el programa devuelve una tabla con la información medida
-
-### 2º Actualizar el emc32
-Finalmente, volvemos al emc32 y manualmente actualizamos la tabla de Final_Result, con los valores nuevos, para que se corrija la posición de los puntos. En la tabla que devuelve el programa, el margen ya está corregido, así como la media de AVG con el duty cycle.
-
-![image](https://github.com/user-attachments/assets/3f1d730f-bbf0-4c9f-bee9-1d0920bc8a86)
-
-
-*Figura B3. Tabla de resumen de medidas*
+> 🚀 **Herramienta automatizada para ensayos EMC**  
 
 
 ---
 
-**Autor:** Juan Ariel Godoy Báez        
-**Puesto:** Becario
+## 🎛️ Vista General de la Interfaz
 
-**Director del proyecto:** Álvaro Borrego Robles          
-**Puesto:** Técnico de ensayos
+A continuación, una vista previa de la interfaz principal:
 
-**Departamento:** Electromagnetic and Radio Matters (Connected Car)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/154df958-373c-49cc-8508-58830892d285" width="700" />
+</p>
+
+<p align="center"><em>Figura B1. Interfaz principal del programa</em></p>
+
+---
+
+## 🧩 Descripción de los Elementos de la Interfaz
+
+| Nº 🔢 | Elemento 🎨                        | Descripción 📝                                                                                                                                                                                                                 |
+|-------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1️⃣   | **Generación de nombre de archivo** | Campos como oferta, cliente, norma, modulación, canal y puerto activo son usados para nombrar las capturas.                                                                                                                 |
+| 2️⃣   | **IP del analizador y controlador** | Introducir la IP del analizador y del controlador (mesa giratoria y mástil). Si se usa **FRANKONIA**, configurar el **tilt** en la web. Si solo se usa un FRANKONIA, introducir la misma IP en ambos campos. En EMC32 deben colocarse como dispositivos virtuales para evitar conflictos. |
+| 3️⃣   | **Ruta del template**              | Escribir la ruta al archivo `.dfl` del analizador.                                                                                                                                                                            |
+| 4️⃣   | **Archivo Excel**                  | Ruta del archivo Excel exportado desde **EMC32**.                                                                                                                                                                            |
+| 5️⃣   | **Duty Cycle**                     | Ingresar el valor medido del duty cycle. El programa aplica la corrección automáticamente:  
+`corrección = 10 * log(1/duty)`                                                                                                             |
+| 6️⃣   | **Guardar screenshots en:**        | Ruta de la carpeta dentro del analizador donde se guardarán las capturas de pantalla.                                                                                                                                         |
+
+---
+
+## 📤 Exportación del Excel desde EMC32
+
+### 🔍 Paso 1: Maximización
+
+Maximizar todos los puntos necesarios según la norma para encontrar la peor **posición y altura**.
+
+### 📁 Paso 2: Exportar Frecuencias Críticas
+
+Salir del modo de medida y exportar la tabla **Critical_Freqs** haciendo clic en el botón que aparece en la siguiente imagen:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0792fb27-1b7b-4d15-b435-a1185092018b" width="600" />
+</p>
+
+<p align="center"><em>Figura B2. Tabla de EMC32 y botón de exportación</em></p>
+
+---
+
+## 🔄 Proceso de Ejecución del Programa
+
+### ▶️ Paso 1: Iniciar Proceso
+
+Una vez rellenados todos los campos, pulsar **"Iniciar proceso"**.
+
+🛠️ El programa:
+- Recorre todas las frecuencias.
+- Realiza la maximización.
+- Controla automáticamente el analizador y el/los controlador(es).
+- Guarda capturas de pantalla en la carpeta indicada.
+- Genera una tabla con los resultados medidos.
+
+---
+
+### 🧮 Paso 2: Actualizar el EMC32
+
+Volver al EMC32 y **actualizar manualmente** la tabla `Final_Result` con los nuevos valores.
+
+✅ La tabla generada por el programa incluye:
+- Margen ya corregido.
+- Media de AVG con corrección por duty cycle.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3f1d730f-bbf0-4c9f-bee9-1d0920bc8a86" width="700" />
+</p>
+
+<p align="center"><em>Figura B3. Tabla resumen de medidas</em></p>
+
+---
+
+## 👨‍💻 Autores y Créditos
+
+| Rol 📌 | Nombre 🧑‍💻 | Puesto 🏷️ |
+|--------|--------------|------------|
+| 🧑‍🎓 **Autor** | **Juan Ariel Godoy Báez** | Becario |
+| 👨‍🔬 **Director del proyecto** | **Álvaro Borrego Robles** | Técnico de Ensayos |
+| 🏢 **Departamento** | **Electromagnetic and Radio Matters (Connected Car)** | |
+
+---
+
+> 💡 *Diseñado para agilizar los ensayos de conformidad EMC bajo las normativas FCC 15.247 y FCC 15.407, con enfoque en precisión, automatización y eficiencia.*
+
+---
